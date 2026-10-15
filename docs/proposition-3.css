@@ -1408,7 +1408,8 @@ p {
     bottom: 0;
     left: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: 7px;
     padding: 7px 5.5% calc(7px + env(safe-area-inset-bottom));
     background: color-mix(in srgb, var(--color-black) 97%, transparent);
     border-top: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent);
@@ -1417,22 +1418,21 @@ p {
 
   .mobile-actions a {
     display: flex;
+    min-width: 0;
     min-height: 42px;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
     color: var(--white);
     font-size: 9px;
   }
 
-  .mobile-actions a:first-child {
-    margin-right: 5px;
+  .mobile-actions .mobile-booking {
     color: var(--ink);
     background: var(--color-accent);
   }
 
-  .mobile-actions a:last-child {
-    margin-left: 5px;
+  .mobile-actions a:not(.mobile-booking) {
     border: 1px solid color-mix(in srgb, var(--color-accent) 70%, transparent);
   }
 
