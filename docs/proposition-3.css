@@ -1425,6 +1425,7 @@ p {
     gap: 4px;
     color: var(--white);
     font-size: 9px;
+    white-space: nowrap;
   }
 
   .mobile-actions .mobile-booking {
@@ -1442,6 +1443,16 @@ p {
 }
 
 @media (max-width: 360px) {
+  .mobile-actions {
+    gap: 5px;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .mobile-actions span {
+    display: none;
+  }
+
   .mobile-trust {
     gap: 6px;
     font-size: 7px;
