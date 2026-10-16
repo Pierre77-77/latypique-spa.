@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="La carte des soins et les tarifs de L’Atypique Spa à Meaux : page en préparation. Contactez notre équipe pour vous renseigner.">
+  <meta name="description" content="Découvrez la carte et les tarifs de L’Atypique Spa à Meaux : massages, gommages, soins visage, duo, spa privatif, formules et offres groupes.">
   <meta name="theme-color" content="#151515">
   <title>Carte et tarifs — L’Atypique Spa</title>
   <link rel="icon" href="assets/favicon/favicon.ico">
-  <link rel="stylesheet" href="proposition-3.css?v=20261016-13">
+  <link rel="stylesheet" href="proposition-3.css?v=20261016-14">
 </head>
 <body class="rates-page">
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -15,15 +15,215 @@
     <a class="brand" href="index.html" aria-label="L’Atypique Spa, accueil">
       <img class="brand-logo" src="assets/Logo/logo1.webp" alt="L’Atypique Spa" width="683" height="140">
     </a>
-    <a class="text-link" href="index.html">Accueil</a>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Ouvrir le menu">
+    <label class="menu-button" for="menu-toggle" aria-label="Afficher le menu"><span></span><span></span><span></span></label>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="carte-tarifs.html" aria-current="page">Carte Tarif</a>
+      <details class="nav-offers">
+        <summary>Toutes les offres</summary>
+        <ul class="nav-submenu">
+          <li><a href="#massage">Nos Massages</a></li>
+          <li><a href="#gommage">Nos Gommages</a></li>
+          <li><a href="#visage">Soins Visage</a></li>
+          <li><a href="#duo">Les Soins en Duo</a></li>
+          <li><a href="#privatif">Le Spa Privatif</a></li>
+          <li><a href="#formules">Les Formules</a></li>
+          <li><a href="#evc">Offres Groupes</a></li>
+          <li><a href="#privatisation">Privatisation en Soirée</a></li>
+        </ul>
+      </details>
+      <span class="nav-pending" aria-disabled="true">Contact et plan d’accès</span>
+    </nav>
   </header>
-  <main class="home-section section-pad" id="contenu">
-    <p class="eyebrow">L’Atypique Spa · Meaux</p>
-    <h1>Carte et tarifs</h1>
-    <p>Cette page est en préparation. La carte détaillée et les tarifs seront disponibles prochainement.</p>
-    <p>Pour connaître nos prestations et leurs tarifs, notre équipe est à votre écoute.</p>
-    <a class="button button-light home-section-link" href="tel:+33971243971">Appeler le 09.71.24.39.71</a>
-    <a class="text-link home-section-link" href="index.html#soins">Revenir aux soins</a>
+  <main class="rates-content section-pad" id="contenu">
+    <div class="rates-intro">
+      <p class="eyebrow">L’Atypique Spa · Meaux</p>
+      <h1>Carte et tarifs</h1>
+      <p>A la fin de chaque soin, une boisson chaude ou un jus vous est offert dans notre espace thé.</p>
+      <a class="button button-light" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réserver sur Planity <span aria-hidden="true">↗</span></a>
+    </div>
+    <nav class="rates-categories" aria-label="Rubriques de la carte">
+      <a href="#massage">Massages</a><a href="#gommage">Gommages</a><a href="#visage">Soins Visage</a><a href="#duo">Soins en Duo</a><a href="#privatif">Spa Privatif</a><a href="#formules">Formules</a><a href="#evc">Groupes</a><a href="#privatisation">Soirées privées</a>
+    </nav>
+
+    <section class="rates-section" id="massage" aria-labelledby="massage-title">
+      <p class="eyebrow">01 · Les massages</p>
+      <h2 id="massage-title">Nos Massages</h2>
+      <p>3 cabines, 3 ambiances apaisantes et inédites pour profiter pleinement de votre massage</p>
+      <div class="rates-grid">
+        <article class="rate-card">
+          <h3>Massage L'Apaisant</h3>
+          <p>La combinaison parfaite de longs effleurements et de mouvements amples et fluides</p>
+          <p>Il permet d’éliminer les tensions physiques et psychiques</p>
+          <p>Composé d’une gestuelle lente et douce, il vous offrira un apaisement total</p>
+          <ul class="rate-prices"><li>90 min <strong>120 €</strong></li><li>60 min <strong>85 €</strong></li><li>30 min <strong>55 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Le Ressourçant</h3>
+          <p>Inspiré du massage Hawaïen, il se veut tonique et souple à la fois</p>
+          <p>Il se pratique en parcourant le corps de haut en bas</p>
+          <p>Il permet de masser plusieurs zones en même temps, provoquant ainsi, une sensation de relaxation intense</p>
+          <ul class="rate-prices"><li>90 min <strong>125 €</strong></li><li>60 min <strong>90 €</strong></li><li>30 min <strong>60 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Le Future Maman</h3>
+          <p>Il agit sur le sommeil et permet de diminuer les douleurs liées à la sciatique</p>
+          <p>Réalisé avec une huile neutre bio, vous profiterez d’un moment de bien-être et de détente</p>
+          <p>Il se pratique entre le 3ème et 8ème mois de grossesse, en position latérale et sur le dos</p>
+          <ul class="rate-prices"><li>60 min <strong>85 €</strong></li><li>30 min <strong>55 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Le Sportif</h3>
+          <p>Un mélange d’étirements thaï, de travail musculaire et de drainage lymphatique</p>
+          <p>Il soulage les douleurs liées au sport, prévient les courbatures et détend la musculature</p>
+          <p>Associé à un massage à l’huile avec pression, il sera l’allié imparable pour améliorer votre performance</p>
+          <ul class="rate-prices"><li>60 min <strong>90 €</strong></li><li>30 min <strong>60 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Les Pierres Chaudes</h3>
+          <p>Un massage manuel réalisé aux huiles essentielles de camomille, associé à un massage aux pierres de basalte volcanique</p>
+          <p>La chaleur des pierres va permettre de travailler plus intensément les nœuds pour dénouer les tensions musculaires profondes</p>
+          <p class="rate-note">Déconseillé pour les personnes souffrant de diabète et de troubles cardiaques</p>
+          <ul class="rate-prices"><li>60 min <strong>95 €</strong></li><li>30 min <strong>65 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Rituel Tête et Nuque</h3>
+          <p>Spécialement conçu pour offrir une relaxation profonde</p>
+          <p>Ce massage libère les tensions du visage, du crâne et de la nuque, procurant une sensation de bien-être immédiate</p>
+          <ul class="rate-prices"><li>30 min <strong>50 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Le Quatre Mains</h3>
+          <p>Ce massage s’impose comme une alternative originale aux pratiques habituelles, grâce à des manœuvres réalisées harmonieusement par 2 praticiennes</p>
+          <p>Pour des sensations décuplées et un effet de bien-être général</p>
+          <ul class="rate-prices"><li>50 min <strong>150 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Massage Le Sur-Mesure</h3>
+          <p>Après avoir répondu aux 10 questions de L’atypique, votre massage sera composé sur mesure, adapté à vos envies ou vos besoins, mélangeant plusieurs techniques de massage venues du monde entier</p>
+          <p>Vous vous évaderez pour un moment de bien-être et de sérénité</p>
+          <ul class="rate-prices"><li>60 min <strong>130 €</strong></li></ul>
+        </article>
+      </div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Massage <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="gommage" aria-labelledby="gommage-title">
+      <p class="eyebrow">02 · Les gommages</p>
+      <h2 id="gommage-title">Nos Gommages</h2>
+      <p>Et si vous optiez pour un gommage ...</p>
+      <div class="rates-grid">
+        <article class="rate-card">
+          <h3>Gommage Corps Express</h3>
+          <p>Gommage rapide sur le corps entier pour éliminer les cellules mortes et redonner à votre peau une sensation de douceur.</p>
+          <ul class="rate-prices"><li>30 min <strong>48 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Gommage Corps Voyage en Orient</h3>
+          <p>Gommage Charme d’Orient réalisé aux cristaux de rose pour un gommage détoxifiant et reminéralisant</p>
+          <p>Suivi d’un enveloppement au beurre d’arganier et d'un modelage final pour une réhydratation totale</p>
+          <ul class="rate-prices"><li>90 min <strong>125 €</strong></li></ul>
+        </article>
+        <article class="rate-card">
+          <h3>Gommage Corps Evasion Berbère</h3>
+          <p>Une douce et profonde exfoliation, suivie d’un enveloppement et d’un effleurage à l’huile sur le corps entier</p>
+          <p>La combinaison des richesses des céréales, ainsi que les bienfaits du miel, de la gelée royale et des huiles végétales vous permettront de retrouver une peau dynamisée, redensifiée et nourrie</p>
+          <ul class="rate-prices"><li>75 min <strong>120 €</strong></li></ul>
+        </article>
+      </div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Gommage <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="visage" aria-labelledby="visage-title">
+      <p class="eyebrow">03 · Le visage</p>
+      <h2 id="visage-title">Soins Visage</h2>
+      <p>Nos soins sont réalisés avec les produits Charme d’Orient, ils comportent tous un démaquillage, un gommage, une pose de masque, une crème de jour ainsi qu’un massage sur une zone au choix. Ils peuvent être effectués dans l’état ou adaptés à votre convenance.<br>Une boisson vous est offerte à la fin de votre soin.</p>
+      <div class="rates-grid">
+        <article class="rate-card"><h3>Soin Visage Coup d'Eclat</h3><p>Grâce à l’utilisation du miel et de la gelée royale, vous retrouverez une peau lumineuse et un coup d’éclat immédiat donnant un teint unifié et nacré à la peau.</p><ul class="rate-prices"><li>45 min <strong>65 €</strong></li></ul></article>
+        <article class="rate-card"><h3>Soin Visage Belle Nigelle</h3><p>Soin à base d’huile de Nigelle pour le respect des peaux sensibles et réactives. Votre peau sera réhydratée et apaisée.</p><ul class="rate-prices"><li>55 min <strong>75 €</strong></li></ul></article>
+        <article class="rate-card"><h3>Soin Visage Beauté d'Orient</h3><p>Soin adapté aux peaux mixtes à grasses, à tendance comédogène. Vous retrouverez une peau purifiée, oxygénée, un grain de peau lisse. (utilisation du vapozone pour l’extraction de comédons) .</p><ul class="rate-prices"><li>55 min <strong>88 €</strong></li></ul></article>
+        <article class="rate-card"><h3>Soin Visage Secret de Jeunesse à la Figue de Barbarie</h3><p>Grâce à l’utilisation du miel et de la figue de barbarie, vous retrouverez une peau lumineuse et un coup d’éclat immédiat donnant un teint unifié et nacré à la peau.</p><ul class="rate-prices"><li>55 min <strong>105 €</strong></li></ul></article>
+      </div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Soin Visage <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="duo" aria-labelledby="duo-title">
+      <p class="eyebrow">04 · À deux</p>
+      <h2 id="duo-title">Les Soins en Duo</h2>
+      <p>Découvrez nos offres duo</p>
+      <div class="rates-grid">
+        <article class="rate-card"><h3>Duo Massage</h3><p>Massage sur mesure pour 2 personnes</p><ul class="rate-prices"><li>30 min <strong>120 €</strong></li><li>60 min <strong>180 €</strong></li><li>90 min <strong>230 €</strong></li></ul></article>
+        <article class="rate-card"><h3>Duo Parent/Enfant</h3><p>Nous ne réalisons les massages enfants (à partir de 5 ans), qu’en présence d’un parent.</p><ul class="rate-prices"><li>30 min <strong>90 €</strong></li><li>60 min <strong>150 €</strong></li></ul></article>
+        <article class="rate-card"><h3>Soins Duo Visage ou Corps</h3><p>Soin visage ou corps sur mesure avec un massage sur une zone au choix.<br>Pour 2 personnes en duo</p><ul class="rate-prices"><li>60 min <strong>195 €</strong></li></ul></article>
+      </div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Soin Duo <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="privatif" aria-labelledby="privatif-title">
+      <p class="eyebrow">05 · L’espace spa</p>
+      <h2 id="privatif-title">Le Spa Privatif</h2>
+      <p>Notre SPA d’une surface de 90m2, comprend un hammam, un sauna, un jacuzzi et une piscine. Des boissons fraîches sont à votre disposition.<br>Vous avez la possibilité de privatiser le SPA entier ou de réserver en collectif.</p>
+      <p>Les serviettes, peignoirs et chaussons sont fournis, vous n’avez que votre maillot de bain à apporter.</p>
+      <p>La piscine n’est pas surveillée, les mineurs sont donc sous la surveillance de leurs parents.</p>
+      <div class="rates-grid">
+        <article class="rate-card"><h3>1 heure de spa privatif</h3><p>du lundi au vendredi</p><ul class="rate-prices"><li>A partir de 2 personnes <strong>60 €/personne</strong></li><li>A partir de 4 personnes <strong>50 €/personne</strong></li><li>A partir de 8 personnes <strong>40 €/personne</strong></li></ul></article>
+        <article class="rate-card"><h3>1h30 de spa privatif</h3><p>du lundi au vendredi</p><ul class="rate-prices"><li>A partir de 2 personnes <strong>80 €/personne</strong></li><li>A partir de 4 personnes <strong>70 €/personne</strong></li><li>A partir de 8 personnes <strong>55 €/personne</strong></li></ul></article>
+        <article class="rate-card"><h3>1 heure de spa privatif</h3><p>les week-ends</p><ul class="rate-prices"><li>A partir de 2 personnes <strong>70 €/personne</strong></li><li>A partir de 4 personnes <strong>60 €/personne</strong></li><li>A partir de 6 personnes <strong>55 €/personne</strong></li><li>A partir de 8 personnes <strong>50 €/personne</strong></li></ul></article>
+        <article class="rate-card"><h3>1 heure de SPA COLLECTIF</h3><ul class="rate-prices"><li>Par personne <strong>40 €</strong></li></ul></article>
+        <article class="rate-card"><h3>1 heure de spa privatif PARENT/ENFANT</h3><ul class="rate-prices"><li>Par adulte <strong>65 €</strong></li><li>Par enfant/adolescent <strong>40 €</strong></li><li>Option massage duo · 30 min <strong>70 €</strong></li></ul></article>
+      </div>
+      <p class="rates-notice">Pour les réservations spa privatif + une option, un devis et un acompte sont obligatoires. Vous faire votre demande via l'adresse suivante : <a href="mailto:latypique.spa@gmail.com">latypique.spa@gmail.com</a></p>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Spa <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="formules" aria-labelledby="formules-title">
+      <p class="eyebrow">06 · Les formules</p>
+      <h2 id="formules-title">Les Formules</h2>
+      <p>Découvrez toutes nos formules</p>
+      <div class="rates-grid">
+        <article class="rate-card"><h3>Formule 1</h3><p>Spa privatif 1h +<br>Massage 1h</p><p class="rate-total">120 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 2</h3><p>Spa privatif 1h +<br>Massage 30 minutes</p><p class="rate-total">100 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 3</h3><p>Spa collectif 1h +<br>Massage 30 minutes</p><p class="rate-total">75 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 4</h3><p>Spa privatif 1h +<br>Massage 1h +<br>un soin du visage 45 mn</p><p class="rate-total">187 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 5</h3><p>Massage 1h +<br>Gommage corps 30 minutes +<br>Soin visage 45 minutes</p><p class="rate-total">187 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 6</h3><p>Massage 1 heure +<br>Soin visage 45 minutes</p><p class="rate-total">130 €/personne</p></article>
+        <article class="rate-card"><h3>Formule 7</h3><p>Spa privatif 1 heure +<br>Massage 30 minutes parent/enfant (12 ans maxi)</p><p class="rate-total">175 € pour 2 personnes</p></article>
+      </div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Formule <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="evc" aria-labelledby="evc-title">
+      <p class="eyebrow">07 · Les groupes</p>
+      <h2 id="evc-title">Offres Groupes</h2>
+      <p>Profitez d'un moment d'exception grâce à notre formule groupe,<br>idéale pour les EVG/EVJF, anniversaires ou pour toute autre célébration !</p>
+      <p>Nous vous proposons 1h30 de SPA privatif au tarif de 50€ par personne.</p>
+      <p>Personnalisez votre expérience en ajoutant des options aux choix :</p>
+      <div class="rates-grid">
+        <article class="rate-card"><h3>Les options massages</h3><p>15 minutes: 20€ / 30 minutes: 30€ / 45 minutes: 45€.</p><p>Nos massages sont réalisés pendant le temps de votre spa.</p></article>
+        <article class="rate-card"><h3>L'option cocktail (salé ou sucré)</h3><p>(une bouteille de champagne offerte pour toute réservation de l'option cocktail).</p><p class="rate-total">18€ TTC par personne</p></article>
+      </div>
+      <p>Nos formules sont disponibles pour des groupes de 6 à 15 personnes.</p>
+      <div class="rates-notice"><h3>Informations importantes :</h3><ul>
+        <li>En cas d'annulation de dernière minute d'un ou plusieurs participants, l'option cocktail reste due</li>
+        <li>Pour les groupes de moins de 6 personnes, l'accès spa + l'option cocktail restent dus dans leur intégralité</li>
+        <li>Un remboursement est possible uniquement si l'annulation est signalée au minimum 48h à l'avance</li>
+        <li>Un devis est obligatoire pour toute réservation groupe. Merci d'envoyer votre demande à : <a href="mailto:latypique.spa@gmail.com">latypique.spa@gmail.com</a></li>
+      </ul></div>
+      <a class="button button-outline" href="https://www.planity.com/latypique-spa-77100-meaux-qjz">Réservez Votre Offre Groupe <span aria-hidden="true">↗</span></a>
+      <a class="button button-outline" href="mailto:latypique.spa@gmail.com?subject=Demande%20de%20devis%20groupe">Demander un devis groupe <span aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="rates-section" id="privatisation" aria-labelledby="privatisation-title">
+      <p class="eyebrow">08 · Les soirées</p>
+      <h2 id="privatisation-title">Privatisation en Soirée</h2>
+      <p>Privatisation spéciale en soirée<br>(Sur demande à <a href="mailto:latypique.spa@gmail.com">latypique.spa@gmail.com</a>)</p>
+      <p>En plus de nos formules de spa privatif disponibles toute la journée, nous proposons la privatisation complète du spa en soirée.<br>Réservé aux groupes de 8 à 16 personnes.<br>Deu créneaux sont disponibles :</p>
+      <p>De 20h00 à 22h00 ou de 22h00 à minuit<br>Possibilité d'ajouter un cocktail salé ou sucré sur demande</p>
+      <p>Cette formule est destinée aux groupes et entreprises qui souhaitent réserver en dehors des heures habituelles d'ouverture.</p>
+      <a class="button button-outline" href="mailto:latypique.spa@gmail.com?subject=Demande%20d%27informations%20privatisation%20du%20spa">Réservez Votre Privatisation en Soirée <span aria-hidden="true">↗</span></a>
+    </section>
+    <a class="text-link" href="index.html">Revenir à l’accueil <span aria-hidden="true">←</span></a>
   </main>
 </body>
 </html>
