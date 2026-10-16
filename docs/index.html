@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="L’Atypique Spa">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="proposition-3.css?v=20261016-10">
+  <link rel="stylesheet" href="proposition-3.css?v=20261016-11">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -24,11 +24,22 @@
     <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Ouvrir le menu">
     <label class="menu-button" for="menu-toggle" aria-label="Afficher le menu"><span></span><span></span><span></span></label>
     <nav class="main-nav" aria-label="Navigation principale">
-      <a href="#decouvrir">Le spa</a>
-      <a href="#experiences">Nos expériences</a>
-      <a href="#soins">Les soins</a>
-      <a href="#privatisation">Privatisation</a>
-      <a class="nav-phone" href="tel:+33971243971">09 71 24 39 71 <span aria-hidden="true">↗</span></a>
+      <a href="#accueil" aria-current="page">Accueil</a>
+      <span class="nav-pending" aria-disabled="true">Carte Tarif</span>
+      <details class="nav-offers">
+        <summary>Toutes les offres</summary>
+        <ul class="nav-submenu">
+          <li><span aria-disabled="true">Nos Massages</span></li>
+          <li><span aria-disabled="true">Nos Gommages</span></li>
+          <li><span aria-disabled="true">Soins Visage</span></li>
+          <li><span aria-disabled="true">Les Soins en Duo</span></li>
+          <li><span aria-disabled="true">Le Spa Privatif</span></li>
+          <li><span aria-disabled="true">Les Formules</span></li>
+          <li><span aria-disabled="true">Offres Groupes</span></li>
+          <li><span aria-disabled="true">Privatisation en Soirée</span></li>
+        </ul>
+      </details>
+      <span class="nav-pending" aria-disabled="true">Contact et plan d’accès</span>
     </nav>
   </header>
 
@@ -153,16 +164,6 @@
         <h2 id="private-title">Le plaisir<br>de se retrouver<br><em>à part.</em></h2>
         <p>En amoureux, en famille ou entre amis, privatisez le spa ou l’espace détente et profitez pleinement du moment, ensemble.</p>
         <a class="button button-light" href="tel:+33971243971">Imaginer votre moment <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="visit section-pad" aria-labelledby="visit-title">
-      <p class="eyebrow">L’Atypique Spa · Meaux</p>
-      <h2 id="visit-title">On se retrouve<br><em>au spa ?</em></h2>
-      <p>Notre équipe est à votre écoute pour préparer votre prochaine parenthèse.</p>
-      <div class="visit-actions">
-        <a class="button button-light" href="tel:+33971243971">Appeler le 09 71 24 39 71 <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=55+rue+du+Commandant+Berges+77100+Meaux" target="_blank" rel="noopener noreferrer">55 rue du Commandant Berges, Meaux <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
