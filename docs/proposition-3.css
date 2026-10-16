@@ -1573,7 +1573,23 @@ p {
   }
 
   .hours-banner {
-    padding: 17px 5.5%;
+    padding: 6px 3% 2px;
+  }
+
+  .hours-address {
+    white-space: nowrap;
+  }
+
+  .hours-address br {
+    display: none;
+  }
+
+  .hours-contact {
+    margin-top: 0;
+  }
+
+  .hours-contact a {
+    min-height: 32px;
   }
 
   .hours-banner p {
