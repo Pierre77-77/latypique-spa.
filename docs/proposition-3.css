@@ -813,6 +813,19 @@ p {
   font-size: 10px;
 }
 
+.hours-banner {
+  padding: 22px 5%;
+  color: var(--ink);
+  background: var(--color-accent);
+  text-align: center;
+}
+
+.hours-banner p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
 .film {
   display: grid;
   grid-template-columns: .7fr 1.3fr;
@@ -1409,6 +1422,14 @@ p {
   .reviews-card {
     min-height: 220px;
     padding: 24px 18px;
+  }
+
+  .hours-banner {
+    padding: 17px 5.5%;
+  }
+
+  .hours-banner p {
+    font-size: 10px;
   }
 
   .film {
