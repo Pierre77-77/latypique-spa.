@@ -1352,10 +1352,7 @@ p {
   }
 
   .hero-scroll {
-    bottom: 15px;
-    left: 5.5%;
-    width: 22px;
-    height: 22px;
+    display: none;
   }
 
   .mobile-trust {
@@ -1377,7 +1374,13 @@ p {
     font-weight: 500;
   }
 
+  .mobile-trust > span {
+    flex: 1;
+    white-space: nowrap;
+  }
+
   .mobile-trust i {
+    flex-shrink: 0;
     width: 1px;
     height: 17px;
     background: color-mix(in srgb, var(--color-accent) 58%, transparent);
@@ -1792,8 +1795,16 @@ p {
   }
 
   .hero-caption {
-    max-width: calc(89% - 36px);
-    text-align: right;
+    right: 3%;
+    left: 3%;
+    max-width: none;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hero-caption span {
+    display: none;
   }
 }
 
@@ -1821,6 +1832,185 @@ p {
   }
 
   .hero-actions {
+    gap: 10px;
+  }
+}
+
+.home-section {
+  background: var(--surface);
+}
+
+.home-care {
+  background: var(--night);
+}
+
+.home-section .section-intro {
+  margin-bottom: 30px;
+}
+
+.home-gallery,
+.home-moments-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-gallery figure {
+  margin: 0;
+}
+
+.home-gallery img,
+.home-moments-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.home-gallery figcaption,
+.home-section h3 {
+  margin: 14px 0 8px;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.home-section p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.home-tour {
+  margin-top: 28px;
+}
+
+.home-tour summary {
+  width: fit-content;
+  padding: 10px 0;
+  color: var(--color-accent);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-tour .film-video {
+  max-height: 480px;
+  margin-top: 12px;
+  object-fit: contain;
+}
+
+.home-care-layout,
+.home-care-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.home-care-layout {
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+  align-items: center;
+}
+
+.home-care-photos img {
+  width: 100%;
+  aspect-ratio: 3 / 5;
+  object-fit: cover;
+}
+
+.home-care-photos img:last-child {
+  margin-top: 30px;
+}
+
+.home-care-options article {
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-white) 15%, transparent);
+}
+
+.home-care-options h3 {
+  margin-top: 0;
+}
+
+.home-care-options p,
+.home-moments-grid p {
+  margin-bottom: 0;
+}
+
+.home-section-link {
+  margin-top: 30px;
+}
+
+.home-moments-grid article {
+  min-width: 0;
+  background: var(--night);
+}
+
+.home-moments-grid article > div {
+  padding: 6px 18px 22px;
+}
+
+.home-moments-grid img {
+  aspect-ratio: 4 / 3;
+}
+
+.rates-page {
+  padding-bottom: 0;
+}
+
+.rates-page h1 {
+  font-family: var(--serif);
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 400;
+}
+
+.rates-page .home-section-link {
+  margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+  .home-moments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .home-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+  }
+
+  .home-care-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .home-care-photos {
+    gap: 14px;
+  }
+
+  .home-care-photos img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .home-gallery figcaption,
+  .home-section h3 {
+    font-size: 21px;
+  }
+
+  .home-section p:not(.eyebrow) {
+    font-size: 12px;
+  }
+
+  .home-tour summary {
+    font-size: 12px;
+  }
+
+  .home-moments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rates-page .site-header {
     gap: 10px;
   }
 }

@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="L’Atypique Spa">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="proposition-3.css?v=20261016-11">
+  <link rel="stylesheet" href="proposition-3.css?v=20261016-13">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -25,7 +25,7 @@
     <label class="menu-button" for="menu-toggle" aria-label="Afficher le menu"><span></span><span></span><span></span></label>
     <nav class="main-nav" aria-label="Navigation principale">
       <a href="#accueil" aria-current="page">Accueil</a>
-      <span class="nav-pending" aria-disabled="true">Carte Tarif</span>
+      <a href="carte-tarifs.html">Carte Tarif</a>
       <details class="nav-offers">
         <summary>Toutes les offres</summary>
         <ul class="nav-submenu">
@@ -59,112 +59,92 @@
     </section>
 
     <div class="mobile-trust" aria-label="Les essentiels du spa">
-      <span>Un espace de <strong>200 m²</strong></span>
+      <span>Un espace<br>de <strong>200 m²</strong></span>
       <i></i>
-      <span>Au cœur de <strong>Meaux</strong></span>
+      <span>Au cœur de<br><strong>Meaux</strong></span>
       <i></i>
-      <span>Votre moment <strong>à vous</strong></span>
+      <span>Votre moment<br><strong>à vous</strong></span>
     </div>
 
-    <section class="welcome section-pad" id="decouvrir" aria-labelledby="welcome-title">
-      <div class="welcome-image">
-        <img src="assets/images/facade-atypique-spa.webp" alt="La façade en bois de L’Atypique Spa à Meaux" loading="lazy">
-        <span class="image-tag">L’Atypique Spa · Meaux</span>
-      </div>
-      <div class="welcome-copy">
-        <p class="eyebrow">Bienvenue dans votre bulle</p>
-        <h2 id="welcome-title">La ville dehors.<br><em>Le calme dedans.</em></h2>
-        <p class="welcome-lead">Un lieu inattendu, à deux pas de l’effervescence du centre-ville.</p>
-        <p>Sur 200 m², L’Atypique Spa réunit les essentiels d’une vraie pause : une piscine, un hammam, un sauna, un jacuzzi et un accueil attentionné. On vient pour se détendre, seul ou à plusieurs, et l’on prend le temps.</p>
-        <a class="text-link" href="#experiences">Découvrir les espaces <span aria-hidden="true">→</span></a>
-      </div>
-    </section>
-
-    <section class="experiences section-pad" id="experiences" aria-labelledby="experiences-title">
+    <section class="home-section section-pad" id="decouvrir" aria-labelledby="space-title">
       <div class="section-intro">
-        <p class="eyebrow">À chacun sa façon de souffler</p>
-        <h2 id="experiences-title">Choisissez votre<br><em>parenthèse.</em></h2>
-        <p>Une escapade dans l’eau, un soin qui vous ressemble ou un moment à partager : à vous de choisir le rythme.</p>
+        <p class="eyebrow">01 · Le spa</p>
+        <h2 id="space-title">Les espaces<br><em>de détente.</em></h2>
+        <p>Sur 200 m² au cœur de Meaux, passez de la chaleur à l’eau et prenez le temps de souffler. Quatre espaces pour composer votre pause.</p>
       </div>
-      <div class="experience-grid">
-        <a class="experience-card experience-spa" href="#espace">
-          <img src="assets/images/spa-vue-ensemble.webp" alt="La piscine au cœur de l’espace spa" loading="lazy">
-          <span class="card-number">01 / DÉTENTE</span>
-          <span class="card-info"><strong>L’espace spa</strong><small>Piscine, hammam, sauna & jacuzzi</small></span>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="experience-card experience-care" href="#soins">
-          <img src="assets/images/cabine-massage-duo.webp" alt="La cabine de soins duo, préparée pour vous accueillir" loading="lazy">
-          <span class="card-number">02 / SOINS</span>
-          <span class="card-info"><strong>Les soins</strong><small>Des gestes adaptés à vos envies</small></span>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-        </a>
-        <a class="experience-card experience-private" href="#privatisation">
-          <img src="assets/images/jacuzzi-eclairage-bleu.webp" alt="Le jacuzzi sous un éclairage bleu, pour un moment à partager" loading="lazy">
-          <span class="card-number">03 / À PARTAGER</span>
-          <span class="card-info"><strong>La privatisation</strong><small>Un moment privilégié, rien qu’à vous</small></span>
-          <span class="card-arrow" aria-hidden="true">↗</span>
-        </a>
+      <div class="home-gallery" id="espace">
+        <figure>
+          <img src="assets/images/sauna-eclairage-rouge.webp" alt="Le sauna et son éclairage chaleureux" loading="lazy">
+          <figcaption>Sauna</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/piscine-vue-sauna-hammam.webp" alt="Vue de l’espace piscine et des accès au sauna et au hammam" loading="lazy">
+          <figcaption>Hammam</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/jacuzzi-eclairage-bleu.webp" alt="Le jacuzzi éclairé de bleu" loading="lazy">
+          <figcaption>Jacuzzi</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/images/piscine-espace-detente.webp" alt="La piscine de L’Atypique Spa" loading="lazy">
+          <figcaption>Piscine</figcaption>
+        </figure>
       </div>
-    </section>
-
-    <section class="space section-pad" id="espace" aria-labelledby="space-title">
-      <div class="space-copy">
-        <p class="eyebrow">L’espace détente</p>
-        <h2 id="space-title">Quatre escales.<br><em>Un seul endroit.</em></h2>
-        <p>De l’eau qui invite à ralentir à la chaleur qui dénoue les tensions, composez votre propre rituel bien-être.</p>
-        <ul class="amenities">
-          <li><span>01</span> Piscine</li>
-          <li><span>02</span> Hammam</li>
-          <li><span>03</span> Sauna</li>
-          <li><span>04</span> Jacuzzi</li>
-        </ul>
-        <p class="small-note"><span aria-hidden="true">✳</span> Les petites attentions font partie du voyage : boissons fraîches à votre disposition.</p>
-      </div>
-      <div class="space-photo">
-        <img src="assets/images/piscine-vue-verticale.webp" alt="La piscine et les installations bien-être de L’Atypique Spa" loading="lazy">
-        <span class="photo-caption">Le temps ralentit, juste ici.</span>
-      </div>
-    </section>
-
-    <section class="care section-pad" id="soins" aria-labelledby="care-title">
-      <div class="care-image">
-        <img src="assets/images/cabine-massage-duo.webp" alt="Une cabine double, aménagée pour les soins" loading="lazy">
-        <span class="care-stamp">UN SOIN<br>POUR VOUS</span>
-      </div>
-      <div class="care-copy">
-        <p class="eyebrow">L’attention juste, le geste juste</p>
-        <h2 id="care-title">Des soins qui<br><em>vous ressemblent.</em></h2>
-        <p>Avant le soin, un temps d’écoute. Puis des gestes choisis avec attention, selon vos envies et votre besoin du moment.</p>
-        <div class="care-list">
-          <div><span>01</span><p><strong>Sur-Mesure</strong><small>Un massage adapté après un échange personnalisé.</small></p></div>
-          <div><span>02</span><p><strong>L’Apaisant</strong><small>Un moment pour relâcher les tensions et souffler.</small></p></div>
-          <div><span>03</span><p><strong>À quatre mains</strong><small>Une expérience enveloppante à découvrir.</small></p></div>
-        </div>
-        <a class="button button-outline" href="tel:+33971243971">Parler de votre soin <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-
-    <section class="film section-pad" aria-labelledby="film-title">
-      <div class="film-heading">
-        <p class="eyebrow">Entrez, vous êtes chez vous</p>
-        <h2 id="film-title">Quelques instants<br><em>à l’Atypique.</em></h2>
-      </div>
-      <video class="film-video" controls playsinline preload="none" poster="assets/images/piscine-espace-detente.webp" aria-label="Visite vidéo de l’Atypique Spa">
+      <details class="home-tour">
+        <summary>Découvrir les espaces en vidéo</summary>
+        <video class="film-video" controls playsinline preload="none" poster="assets/images/piscine-espace-detente.webp" aria-label="Visite vidéo de l’Atypique Spa">
         <source src="assets/video/Video-2.mp4" type="video/mp4">
         Votre navigateur ne prend pas en charge la lecture vidéo.
-      </video>
+        </video>
+      </details>
     </section>
 
-    <section class="private" id="privatisation" aria-labelledby="private-title">
-      <img class="private-image" src="assets/images/sauna-eclairage-rouge.webp" alt="Le sauna éclairé en rouge et les lanternes au bord de la piscine" loading="lazy">
-      <div class="private-shade"></div>
-      <div class="private-copy">
-        <p class="eyebrow">À vous, rien qu’à vous</p>
-        <h2 id="private-title">Le plaisir<br>de se retrouver<br><em>à part.</em></h2>
-        <p>En amoureux, en famille ou entre amis, privatisez le spa ou l’espace détente et profitez pleinement du moment, ensemble.</p>
-        <a class="button button-light" href="tel:+33971243971">Imaginer votre moment <span aria-hidden="true">↗</span></a>
+    <section class="home-section home-care section-pad" id="soins" aria-labelledby="care-title">
+      <div class="section-intro">
+        <p class="eyebrow">02 · Les soins</p>
+        <h2 id="care-title">Nos soins.<br><em>Votre moment.</em></h2>
+        <p>Seul ou à deux, choisissez l’attention qui vous ressemble. Notre équipe est à votre écoute pour vous accompagner.</p>
       </div>
+      <div class="home-care-layout">
+        <div class="home-care-photos">
+          <img src="assets/images/cabine-massage-duo.webp" alt="La cabine de soins duo au plafond végétal" loading="lazy">
+          <img src="assets/images/cabine-soins-duo.webp" alt="Les tables de soins préparées pour votre accueil" loading="lazy">
+        </div>
+        <div class="home-care-options">
+          <article><h3>Massages</h3><p>Une pause pour relâcher les tensions et vous retrouver.</p></article>
+          <article><h3>Gommages</h3><p>Un rituel pour prendre soin de votre peau.</p></article>
+          <article><h3>Soins Visage</h3><p>Une attention dédiée à votre visage.</p></article>
+          <article><h3>Les Soins en Duo</h3><p>Le plaisir de partager un moment de bien-être à deux.</p></article>
+        </div>
+      </div>
+      <a class="button button-outline home-section-link" href="carte-tarifs.html">Découvrir la carte et les tarifs <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="home-section section-pad" id="privatisation" aria-labelledby="moments-title">
+      <div class="section-intro">
+        <p class="eyebrow">03 · Les occasions</p>
+        <h2 id="moments-title">Les moments<br><em>à partager.</em></h2>
+        <p>Célébrer, offrir ou se retrouver autrement : faites du spa le cadre de vos occasions particulières.</p>
+      </div>
+      <div class="home-moments-grid">
+        <article>
+          <img src="assets/images/spa-vue-ensemble.webp" alt="L’espace spa pour se retrouver en groupe" loading="lazy">
+          <div><h3>EVG & EVJF</h3><p>Avant le grand jour, retrouvez-vous entre amis pour une parenthèse au spa.</p></div>
+        </article>
+        <article>
+          <img src="assets/images/coupes-seau-espace-spa.webp" alt="Des coupes et un seau dans l’espace spa" loading="lazy">
+          <div><h3>Cocktails</h3><p>Prolongez le plaisir avec un moment convivial autour d’un cocktail.</p></div>
+        </article>
+        <article>
+          <img src="assets/images/accueil-salon-mur-pierre.webp" alt="Le salon d’accueil de L’Atypique Spa" loading="lazy">
+          <div><h3>Bons cadeaux</h3><p>Offrez une pause bien-être et le plaisir de prendre du temps pour soi.</p></div>
+        </article>
+        <article>
+          <img src="assets/images/buffet-sale-vue-jacuzzi.webp" alt="Un buffet installé près du jacuzzi" loading="lazy">
+          <div><h3>Soirées privées</h3><p>Pour les particuliers ou les entreprises, imaginez une soirée dans un lieu rien qu’à vous.</p></div>
+        </article>
+      </div>
+      <a class="button button-outline home-section-link" href="tel:+33971243971">Parlons de votre projet <span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="reviews section-pad" aria-labelledby="reviews-title">
