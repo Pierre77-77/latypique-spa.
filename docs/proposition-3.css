@@ -25,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  padding-bottom: 0;
+  padding-bottom: 84px;
   color: var(--white);
   background: var(--night);
   font-family: var(--sans);
@@ -768,15 +768,43 @@ p {
   align-items: center;
   justify-content: center;
   padding: 28px;
+  color: #202124;
+  background: #fff;
   text-align: center;
-  border: 1px solid color-mix(in srgb, var(--color-accent) 45%, transparent);
+  border: 1px solid #dadce0;
+  border-radius: 8px;
 }
 
 .reviews-label {
-  color: var(--muted);
+  color: #5f6368;
   font-size: 9px;
   letter-spacing: .16em;
   text-transform: uppercase;
+}
+
+.google-name {
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.google-name > span:nth-child(1),
+.google-name > span:nth-child(4) {
+  color: #4285f4;
+}
+
+.google-name > span:nth-child(2),
+.google-name > span:nth-child(6) {
+  color: #ea4335;
+}
+
+.google-name > span:nth-child(3) {
+  color: #fbbc05;
+}
+
+.google-name > span:nth-child(5) {
+  color: #34a853;
 }
 
 .reviews-score {
@@ -788,20 +816,20 @@ p {
 }
 
 .reviews-score strong {
-  color: var(--white);
+  color: #202124;
   font-size: 55px;
   font-weight: 400;
   line-height: 1;
 }
 
 .reviews-score span {
-  color: var(--muted);
+  color: #5f6368;
   font-size: 15px;
 }
 
 .reviews-stars {
   margin-top: 6px;
-  color: var(--color-accent);
+  color: #fbbc04;
   font-size: 17px;
   letter-spacing: .12em;
   line-height: 1;
@@ -809,8 +837,21 @@ p {
 
 .reviews-card > p {
   margin: 8px 0 18px;
-  color: var(--muted);
+  color: #5f6368;
   font-size: 10px;
+}
+
+.reviews-card .button {
+  color: #fff;
+  background: #1a73e8;
+  border-color: #1a73e8;
+}
+
+.reviews-card .button:hover,
+.reviews-card .button:focus-visible {
+  color: #fff;
+  background: #185abc;
+  border-color: #185abc;
 }
 
 .hours-banner {
@@ -824,6 +865,27 @@ p {
   margin: 0;
   font-size: 12px;
   line-height: 1.8;
+}
+
+.hours-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.hours-contact a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.hours-contact a[aria-label] {
+  min-width: 44px;
 }
 
 .film {
@@ -973,7 +1035,45 @@ p {
 }
 
 .mobile-actions {
-  display: none;
+  position: fixed;
+  z-index: 7;
+  right: 50%;
+  bottom: 18px;
+  display: grid;
+  width: min(520px, calc(100% - 40px));
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 8px;
+  padding: 10px;
+  background: color-mix(in srgb, var(--color-black) 97%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-white) 15%, transparent);
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--color-black) 45%, transparent);
+  backdrop-filter: blur(10px);
+  transform: translateX(50%);
+}
+
+.mobile-actions a {
+  display: flex;
+  min-width: 0;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--white);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.mobile-actions .mobile-booking {
+  color: var(--ink);
+  background: var(--color-accent);
+}
+
+.mobile-actions a:not(.mobile-booking) {
+  border: 1px solid color-mix(in srgb, var(--color-accent) 70%, transparent);
+}
+
+.mobile-actions span {
+  font-size: 12px;
 }
 
 @keyframes enter {
@@ -1012,6 +1112,54 @@ p {
 
   .experience-card {
     min-height: 295px;
+  }
+}
+
+@media (min-width: 621px) {
+  .main-nav,
+  .eyebrow,
+  .button,
+  .text-link,
+  .hero-caption,
+  .image-tag,
+  .card-number,
+  .card-info small,
+  .amenities span,
+  .small-note,
+  .photo-caption,
+  .care-stamp,
+  .care-list > div > span,
+  .care-list small,
+  .reviews-label,
+  .reviews-card > p,
+  .hours-banner p,
+  .hours-contact {
+    font-size: 14px;
+  }
+
+  .hero-copy > p:not(.eyebrow),
+  .welcome-copy > p:not(.eyebrow, .welcome-lead),
+  .section-intro > p:last-child,
+  .space-copy > p:not(.eyebrow, .small-note),
+  .care-copy > p:not(.eyebrow),
+  .reviews-copy > p:last-child,
+  .private-copy > p:not(.eyebrow),
+  .visit > p:not(.eyebrow) {
+    font-size: 16px;
+  }
+
+  .site-header {
+    height: auto;
+    min-height: 76px;
+    gap: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px 16px;
   }
 }
 
@@ -1526,42 +1674,67 @@ p {
 
   .mobile-actions {
     position: fixed;
-    z-index: 7;
     right: 0;
     bottom: 0;
     left: 0;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr);
+    width: auto;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 7px;
     padding: 7px 5.5% calc(7px + env(safe-area-inset-bottom));
-    background: color-mix(in srgb, var(--color-black) 97%, transparent);
-    border-top: 1px solid color-mix(in srgb, var(--color-white) 12%, transparent);
-    backdrop-filter: blur(10px);
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    box-shadow: none;
+    transform: none;
   }
 
   .mobile-actions a {
-    display: flex;
-    min-width: 0;
-    min-height: 42px;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    color: var(--white);
-    font-size: 9px;
-    white-space: nowrap;
-  }
-
-  .mobile-actions .mobile-booking {
-    color: var(--ink);
-    background: var(--color-accent);
-  }
-
-  .mobile-actions a:not(.mobile-booking) {
-    border: 1px solid color-mix(in srgb, var(--color-accent) 70%, transparent);
-  }
-
-  .mobile-actions span {
     font-size: 12px;
+  }
+
+  .eyebrow,
+  .hero .eyebrow,
+  .welcome-copy .eyebrow,
+  .section-intro .eyebrow,
+  .space .eyebrow,
+  .care .eyebrow,
+  .film .eyebrow,
+  .private .eyebrow,
+  .hero-caption,
+  .mobile-trust,
+  .image-tag,
+  .card-number,
+  .card-info small,
+  .amenities span,
+  .small-note,
+  .care-stamp,
+  .care-list > div > span,
+  .care-list small,
+  .reviews-label {
+    font-size: 11px;
+  }
+
+  .main-nav > a,
+  .hero-copy > p:not(.eyebrow),
+  .button,
+  .text-link,
+  .visit-actions .text-link,
+  .welcome-copy > p:not(.eyebrow, .welcome-lead),
+  .section-intro > p:last-child,
+  .space-copy > p:not(.eyebrow, .small-note),
+  .photo-caption,
+  .care-copy > p:not(.eyebrow),
+  .reviews-copy > p:last-child,
+  .reviews-card > p,
+  .hours-banner p,
+  .private-copy > p:not(.eyebrow),
+  .visit > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+
+  .hero-caption {
+    max-width: calc(89% - 36px);
+    text-align: right;
   }
 }
 
@@ -1578,7 +1751,6 @@ p {
 
   .mobile-trust {
     gap: 6px;
-    font-size: 7px;
   }
 
   .hero h1 {
