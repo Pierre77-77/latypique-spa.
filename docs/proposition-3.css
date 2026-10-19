@@ -2281,3 +2281,21 @@ p {
     transition-duration: .01ms !important;
   }
 }
+
+.legal-footer {
+  margin: 32px 0 0;
+  padding: 0 20px 24px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.legal-footer a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-content .rates-section a {
+  color: var(--color-accent);
+  overflow-wrap: anywhere;
+}
