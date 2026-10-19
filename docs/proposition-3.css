@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Alice";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/alice-latin.woff2") format("woff2");
+}
+
 :root {
   /* Palette commune a toutes les pages partageant cette feuille de style. */
   --color-black: #2a211d;
@@ -10,8 +18,8 @@
   --surface: color-mix(in srgb, var(--color-black) 96%, var(--color-white));
   --surface-raised: color-mix(in srgb, var(--color-black) 92%, var(--color-white));
   --muted: color-mix(in srgb, var(--color-white) 68%, var(--color-black));
-  --serif: "abril", "alice", "cormorant", Georgia, serif;
-  --sans: "alice", "cormorant", Arial, sans-serif;
+  --serif: Georgia, "Noto Serif", "Times New Roman", serif;
+  --sans: "Alice", Georgia, "Noto Serif", serif;
 }
 
 * {
@@ -1298,11 +1306,11 @@ p {
   .main-nav > a,
   .main-nav > .nav-pending,
   .nav-offers summary {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .nav-submenu {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .main-nav .nav-phone {
@@ -1346,7 +1354,7 @@ p {
   .hero-copy > p:not(.eyebrow) {
     max-width: 320px;
     margin-bottom: 17px;
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .hero-actions {
@@ -1656,6 +1664,7 @@ p {
 
   .hours-contact {
     margin-top: 0;
+    font-size: 16px;
   }
 
   .hours-contact a {
@@ -1774,7 +1783,7 @@ p {
   }
 
   .mobile-actions a {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .eyebrow,
@@ -1796,7 +1805,7 @@ p {
   .care-list > div > span,
   .care-list small,
   .reviews-label {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .main-nav > a,
@@ -1814,13 +1823,14 @@ p {
   .hours-banner p,
   .private-copy > p:not(.eyebrow),
   .visit > p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .hero-caption {
     right: 3%;
     left: 3%;
     max-width: none;
+    font-size: 12px;
     letter-spacing: 0;
     text-align: center;
     white-space: nowrap;
@@ -1844,6 +1854,11 @@ p {
 
   .mobile-trust {
     gap: 6px;
+  }
+
+  .hero-caption,
+  .hours-address {
+    white-space: normal;
   }
 
   .hero h1 {
@@ -2018,11 +2033,11 @@ p {
   }
 
   .home-section p:not(.eyebrow) {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .home-tour summary {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .home-moments-grid {
@@ -2175,7 +2190,7 @@ p {
   .rates-content p,
   .rates-content li,
   .rates-categories a {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .rates-grid {
