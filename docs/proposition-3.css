@@ -1121,7 +1121,7 @@ p {
   bottom: 18px;
   display: grid;
   width: min(520px, calc(100% - 40px));
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   padding: 10px;
   background: color-mix(in srgb, var(--color-black) 97%, transparent);
@@ -1764,7 +1764,6 @@ p {
     bottom: 0;
     left: 0;
     width: auto;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
     gap: 7px;
     padding: 7px 5.5% calc(7px + env(safe-area-inset-bottom));
     border-right: 0;
@@ -1941,10 +1940,6 @@ p {
   width: 100%;
   aspect-ratio: 3 / 5;
   object-fit: cover;
-}
-
-.home-care-photos img:last-child {
-  margin-top: 30px;
 }
 
 .home-care-options article {
@@ -2229,7 +2224,8 @@ p {
   text-decoration: underline;
 }
 
-.contact-content h3 {
+.contact-content h3,
+.contact-card address + h2 {
   margin-top: 24px;
 }
 
