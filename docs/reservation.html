@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Réservez votre moment de bien-être à L’Atypique Spa à Meaux : choisissez votre prestation et votre rendez-vous en ligne avec Planity.">
+  <meta name="theme-color" content="#2a211d">
+  <title>Réservation en ligne — L’Atypique Spa</title>
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="proposition-3.css?v=20261020-1">
+</head>
+<body class="rates-page">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="L’Atypique Spa, accueil">
+      <img class="brand-logo" src="assets/Logo/logo1.webp" alt="L’Atypique Spa" width="683" height="140">
+    </a>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Ouvrir le menu">
+    <label class="menu-button" for="menu-toggle" aria-label="Afficher le menu"><span></span><span></span><span></span></label>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="carte-tarifs.html">Carte des soins / Tarif</a>
+      <a href="privatisation.html">Privatisation</a>
+      <details class="nav-offers">
+        <summary>Toutes les offres</summary>
+        <ul class="nav-submenu">
+          <li><a href="carte-tarifs.html#massage">Nos Massages</a></li>
+          <li><a href="carte-tarifs.html#gommage">Nos Gommages</a></li>
+          <li><a href="carte-tarifs.html#visage">Soins Visage</a></li>
+          <li><a href="carte-tarifs.html#duo">Les Soins en Duo</a></li>
+          <li><a href="carte-tarifs.html#privatif">Le Spa Privatif</a></li>
+          <li><a href="carte-tarifs.html#formules">Les Formules</a></li>
+          <li><a href="carte-tarifs.html#evc">Offres Groupes</a></li>
+          <li><a href="carte-tarifs.html#privatisation">Privatisation en Soirée</a></li>
+        </ul>
+      </details>
+      <a href="contact.html">Horaires, contact et plan d’accès</a>
+    </nav>
+  </header>
+
+  <main class="booking-content section-pad" id="contenu">
+    <div class="rates-intro booking-intro">
+      <p class="eyebrow">L’Atypique Spa · Meaux</p>
+      <h1>Réservez votre<br><em>parenthèse.</em></h1>
+      <p>Un soin, un massage, un moment au spa… Choisissez votre prestation et retrouvez les disponibilités directement en ligne.</p>
+    </div>
+
+    <section class="booking-module" id="reservation" aria-label="Réservation en ligne avec Planity">
+      <p class="booking-error" id="booking-error" role="alert" hidden>Le module de réservation n’a pas pu se charger. Vous pouvez réserver directement sur Planity grâce au lien ci-dessous ou nous appeler.</p>
+      <noscript><p>Activez JavaScript pour utiliser le module de réservation, ou réservez directement sur Planity grâce au lien ci-dessous.</p></noscript>
+      <div id="planity-container"></div>
+    </section>
+
+    <div class="booking-help">
+      <p>Un souci pour réserver ? <a href="https://www.planity.com/latypique-spa-77100-meaux-qjz" target="_blank" rel="noopener noreferrer">Ouvrir Planity dans un nouvel onglet <span aria-hidden="true">↗</span></a></p>
+      <p>Besoin d’un conseil ? Appelez-nous au <a href="tel:+33971243971">09.71.24.39.71</a>.</p>
+      <p>Pour une privatisation en soirée ou une demande de devis, <a href="contact.html">contactez notre équipe</a>.</p>
+    </div>
+    <p class="legal-footer"><a href="mentions-legales.html">Mentions légales</a></p>
+  </main>
+
+  <div class="mobile-actions" aria-label="Actions rapides">
+    <a href="tel:+33971243971"><span aria-hidden="true">☎</span> Appelez</a>
+    <a class="mobile-booking" href="#reservation" aria-current="page">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+        <path d="M16 3v4M8 3v4M3 11h18M9 16l2 2 4-4"></path>
+      </svg>
+      Réservez
+    </a>
+    <a href="privatisation.html"><span aria-hidden="true">↗</span> Privatiser</a>
+  </div>
+
+  <script>
+    window.planity = {
+      key: '2207--NE6sAewOqTRVJlf_gqS',
+      primaryColor: '#2a211d'
+    };
+    if (new URLSearchParams(window.location.search).get('module') === 'bons-cadeaux') {
+      window.planity.giftVoucherContainer = document.getElementById('planity-container');
+      document.title = 'Bons cadeaux — L’Atypique Spa';
+      document.querySelector('.booking-intro h1').innerHTML = 'Offrez une<br><em>parenthèse.</em>';
+      document.querySelector('.booking-intro > p:last-child').textContent = 'Choisissez un bon cadeau et offrez un moment de bien-être à L’Atypique Spa.';
+      document.getElementById('reservation').setAttribute('aria-label', 'Bons cadeaux avec Planity');
+      document.querySelector('.mobile-booking').href = 'reservation.html';
+      document.querySelector('.mobile-booking').removeAttribute('aria-current');
+    } else {
+      window.planity.container = document.getElementById('planity-container');
+    }
+  </script>
+  <script src="https://d2skjte8udjqxw.cloudfront.net/widget/production/2/polyfills.latest.js" onerror="document.getElementById('booking-error').hidden = false"></script>
+  <script src="https://d2skjte8udjqxw.cloudfront.net/widget/production/2/app.latest.js" onerror="document.getElementById('booking-error').hidden = false"></script>
+</body>
+</html>
