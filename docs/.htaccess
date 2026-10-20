@@ -1,0 +1,15 @@
+# A deployer avec le site sur Apache, a la racine de latypiquespa.com.
+# Fusionner avec la configuration existante ; requiert mod_rewrite et AllowOverride FileInfo.
+# GitHub Pages et le serveur Python local n'appliquent pas ces regles.
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(?:www\.)?latypiquespa\.com$ [NC]
+RewriteRule ^spa_carte\.html$ https://latypiquespa.com/carte-tarifs.html [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(?:www\.)?latypiquespa\.com$ [NC]
+RewriteRule ^spa_contact(?:\.html)?$ https://latypiquespa.com/contact.html [R=301,L]
+
+# Ne pas rediriger la resolution interne de DirectoryIndex vers index.html.
+RewriteCond %{HTTP_HOST} ^(?:www\.)?latypiquespa\.com$ [NC]
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ https://latypiquespa.com/ [R=301,L]

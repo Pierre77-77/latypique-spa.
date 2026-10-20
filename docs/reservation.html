@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Réservez votre moment de bien-être à L’Atypique Spa à Meaux : choisissez votre prestation et votre rendez-vous en ligne avec Planity.">
+  <meta name="description" content="Réservez un massage, un soin ou un accès spa à Meaux. Consultez les prestations et disponibilités de L’Atypique Spa avec notre module Planity.">
   <meta name="theme-color" content="#2a211d">
-  <title>Réservation en ligne — L’Atypique Spa</title>
+  <title>Réserver un spa ou un massage à Meaux | L’Atypique Spa</title>
+  <link rel="canonical" href="https://latypiquespa.com/reservation.html">
   <link rel="icon" href="assets/favicon/favicon.ico">
   <link rel="stylesheet" href="proposition-3.css?v=20261020-2">
 </head>
@@ -42,7 +43,7 @@
     <div class="rates-intro booking-intro">
       <p class="eyebrow">L’Atypique Spa · Meaux</p>
       <h1>Réservez votre<br><em>parenthèse.</em></h1>
-      <p>Un soin, un massage, un moment au spa… Choisissez votre prestation et retrouvez les disponibilités directement en ligne.</p>
+      <p>Réservez votre massage, votre soin ou votre accès spa à Meaux. Choisissez une prestation et retrouvez les disponibilités directement en ligne avec Planity.</p>
     </div>
 
     <section class="booking-module" id="reservation" aria-label="Réservation en ligne avec Planity">
@@ -77,9 +78,10 @@
     };
     if (new URLSearchParams(window.location.search).get('module') === 'bons-cadeaux') {
       window.planity.giftVoucherContainer = document.getElementById('planity-container');
-      document.title = 'Bons cadeaux — L’Atypique Spa';
+      document.title = 'Bons cadeaux spa et massage à Meaux | L’Atypique Spa';
       document.querySelector('.booking-intro h1').innerHTML = 'Offrez une<br><em>parenthèse.</em>';
-      document.querySelector('.booking-intro > p:last-child').textContent = 'Choisissez un bon cadeau et offrez un moment de bien-être à L’Atypique Spa.';
+      document.querySelector('.booking-intro > p:last-child').textContent = 'Offrez un massage, un soin ou une pause spa à Meaux. Choisissez une carte cadeau à montant variable ou une prestation à offrir et recevez votre bon cadeau au format PDF avec Planity.';
+      document.querySelector('meta[name="description"]').content = 'Offrez un bon cadeau spa ou massage à Meaux. Choisissez une carte à montant variable ou une prestation chez L’Atypique Spa et recevez votre bon au format PDF.';
       document.getElementById('reservation').setAttribute('aria-label', 'Bons cadeaux avec Planity');
       document.querySelector('.mobile-booking').href = 'reservation.html';
       document.querySelector('.mobile-booking').removeAttribute('aria-current');
