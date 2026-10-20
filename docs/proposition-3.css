@@ -2256,6 +2256,11 @@ p {
   border: 0;
 }
 
+/* Le module definit aussi --white sur :root. */
+.booking-page {
+  --white: var(--color-white);
+}
+
 .booking-content {
   background: var(--surface);
 }
@@ -2283,6 +2288,61 @@ p {
   padding: 16px;
   border-left: 3px solid var(--ink);
   background: var(--color-accent);
+}
+
+/* Planity injecte ses styles apres cette feuille ; ces couleurs doivent primer. */
+.booking-module .planityWidget,
+.booking-module .planityWidget > div,
+.booking-module .planity_ui_appointment_background,
+.booking-module .planity_ui_item-list-element,
+.booking-module [class*="service_item-module_card-"] {
+  color: var(--ink) !important;
+  background-color: var(--white) !important;
+}
+
+.booking-module .planity_ui_item-list-element {
+  border-color: var(--color-accent) !important;
+  box-shadow: none !important;
+}
+
+.booking-module .planity-secondary-color:not(button),
+.booking-module .planity_appointment_service_cell,
+.booking-module .planity_appointment_service_small-cell {
+  color: var(--ink) !important;
+}
+
+.booking-module .planity-component-button,
+.booking-module .planity_ui_button_root,
+.booking-module .planity_ui_action_button_root {
+  color: var(--ink) !important;
+  background-color: var(--white) !important;
+  border-color: var(--color-accent) !important;
+}
+
+.booking-module button[class*="button-module_primary-"],
+.booking-module .planity-nav-button-active,
+.booking-module .planity_bookappointment-button-choose,
+.booking-module .planity-gift-voucher-button-choose,
+.booking-module .planity_appointment_days_slider_hour_availability {
+  color: var(--ink) !important;
+  background-color: var(--color-accent) !important;
+  border-color: var(--color-accent) !important;
+}
+
+.booking-module .planity-component-button:not(:disabled):not([aria-disabled="true"]):hover,
+.booking-module button[class*="button-module_primary-"]:not(:disabled):not([aria-disabled="true"]):hover,
+.booking-module .planity_appointment_days_slider_hour_availability:hover {
+  color: var(--white) !important;
+  background-color: var(--ink) !important;
+  border-color: var(--ink) !important;
+}
+
+.booking-module button:focus-visible,
+.booking-module a:focus-visible,
+.booking-module input:focus-visible,
+.booking-module [tabindex]:focus-visible {
+  outline: 2px solid var(--ink) !important;
+  outline-offset: 3px;
 }
 
 .booking-help {
