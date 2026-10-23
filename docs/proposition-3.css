@@ -1962,6 +1962,39 @@ p {
   line-height: 1.8;
 }
 
+.water-quality {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--surface-raised);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.water-quality > img {
+  width: 130px;
+  height: auto;
+  padding: 8px;
+  background: #fff;
+}
+
+.water-quality > div {
+  flex: 1 1 220px;
+}
+
+.home-section .water-quality h3 {
+  margin-top: 0;
+}
+
+.water-quality p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 .home-tour {
   margin-top: 28px;
 }
@@ -2169,6 +2202,60 @@ p {
   padding: 24px;
   background: var(--night);
   border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+
+.rates-content details.rate-card {
+  display: block;
+  align-self: start;
+  padding: 0;
+}
+
+.rates-content .rate-card > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.rates-content .rate-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.rates-content .rate-card > summary::after {
+  content: "+";
+  flex-shrink: 0;
+  color: var(--color-accent);
+  font-size: 24px;
+}
+
+.rates-content .rate-card[open] > summary::after {
+  content: "-";
+}
+
+.rates-content .rate-card > summary h3 {
+  margin: 0;
+}
+
+.rates-content .rate-card > summary:hover,
+.rates-content .rate-card > summary:focus-visible {
+  background: var(--surface-raised);
+}
+
+.rates-content .rate-card > summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+.rates-content details.rate-card > :not(summary) {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.rates-content details.rate-card > :last-child {
+  margin-bottom: 24px;
 }
 
 .rate-prices {
