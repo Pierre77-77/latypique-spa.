@@ -821,9 +821,9 @@ p {
 
 .reviews {
   display: grid;
-  grid-template-columns: 1.1fr .75fr;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 9%;
+  gap: 28px;
   background: var(--surface);
 }
 
@@ -849,13 +849,20 @@ p {
   line-height: 1.85;
 }
 
+.reviews-platforms {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 3vw, 24px);
+}
+
 .reviews-card {
   display: flex;
-  min-height: 245px;
+  min-width: 0;
+  min-height: 210px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 28px;
+  padding: 20px;
   color: #202124;
   background: #fff;
   text-align: center;
@@ -870,11 +877,16 @@ p {
   text-transform: uppercase;
 }
 
-.google-name {
+.google-name,
+.planity-name {
   font-family: Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.planity-name {
+  color: #202124;
 }
 
 .google-name > span:nth-child(1),
@@ -905,7 +917,7 @@ p {
 
 .reviews-score strong {
   color: #202124;
-  font-size: 55px;
+  font-size: 44px;
   font-weight: 400;
   line-height: 1;
 }
@@ -930,9 +942,22 @@ p {
 }
 
 .reviews-card .button {
+  max-width: 100%;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
   color: #fff;
   background: #1a73e8;
   border-color: #1a73e8;
+}
+
+.reviews-platforms .reviews-card > p {
+  font-size: 14px;
+}
+
+.reviews-card-planity .button {
+  background: #202124;
+  border-color: #202124;
 }
 
 .reviews-card .button:hover,
@@ -940,6 +965,12 @@ p {
   color: #fff;
   background: #185abc;
   border-color: #185abc;
+}
+
+.reviews-card-planity .button:hover,
+.reviews-card-planity .button:focus-visible {
+  background: #3c4043;
+  border-color: #3c4043;
 }
 
 .hours-banner {
@@ -1646,8 +1677,19 @@ p {
   }
 
   .reviews-card {
-    min-height: 220px;
-    padding: 24px 18px;
+    min-height: 210px;
+    padding: 18px 10px;
+  }
+
+  .reviews-card .reviews-label {
+    font-size: 12px;
+    letter-spacing: .08em;
+  }
+
+  .reviews-card .button {
+    gap: 5px;
+    padding: 8px;
+    font-size: 13px;
   }
 
   .hours-banner {
