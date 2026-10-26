@@ -2225,14 +2225,18 @@ p {
 }
 
 .rates-content .rate-card > summary::after {
-  content: "+";
+  content: "";
   flex-shrink: 0;
-  color: var(--color-accent);
-  font-size: 24px;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform 160ms ease;
 }
 
 .rates-content .rate-card[open] > summary::after {
-  content: "-";
+  transform: rotate(225deg) translateY(-3px);
 }
 
 .rates-content .rate-card > summary h3 {
